@@ -13,15 +13,15 @@ int parallele(int R1,int R2){
 }
 
 int main(){
-    float R1,R2,R3,R4,R5,R6,R7;
+    int R1,R2,R3,R4,R5,R6,R7;
     float R0;
 
     int serie();
     int parallele();
    
-    R0=R2=R3=R4=R5=R6=R7=100;
+    R0=R1=R2=R3=R4=R5=R6=R7=100;
     
-    R0=parallele((serie((parallele(R1,serie(R2,R3))),(serie(R4,parallele(R5,R6))))),R7);
+    R0=parallele(serie((parallele(R1,serie(R2,R3))),(serie(R4,parallele(R5,R6)))),R7);
 
-    printf("Res = %f",R0);
+    printf("Res = %f\n",R0);
 }
