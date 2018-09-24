@@ -1,10 +1,8 @@
 #include <stdio.h>
-
+#define MAX 1000
 int main(){
-   	 int MAX,i,x;
-    
-    	printf("Votre Maximum ? ");
-    	scanf("%d",&MAX);
+   	 int i,x;
+
     	x=2;
     	int tab[MAX-1];
     	for(i=0;i<MAX;i++){
