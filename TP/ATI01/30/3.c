@@ -9,7 +9,7 @@ int main(){
     for(i=0;i<514;i++){
 
         if(coord[i]<coord[i+2]){
-            distance=(distance+(coord[i]+coord[i+2]));
+            distance=(distance+(coord[i+2]-coord[i]));
         }
         if(coord[i]>coord[i+2]){
             distance=(distance+(coord[i]-coord[i+2]));    
